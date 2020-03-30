@@ -1,0 +1,31 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "$nuxt": true
+    },
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "plugin:vue/essential",
+        "prettier/vue"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-unused-vars": "warn",
+        "vue/max-attributes-per-line": "off",
+        "vue/no-parsing-error": [
+            "error",
+            {
+                "unexpected-character-in-attribute-name": false
+            }
+        ]
+    }
+}
