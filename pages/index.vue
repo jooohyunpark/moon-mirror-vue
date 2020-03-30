@@ -16,8 +16,8 @@
 export default {
   data() {
     return {
-      column: 10,
-      row: 10
+      column: 16,
+      row: 12
     }
   },
   mounted() {
@@ -27,9 +27,8 @@ export default {
     initVideo() {
       const video = document.querySelector('video')
 
-      // Get access to the camera!
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        // Not adding `{ audio: true }` since we only want video now
+        // Not adding `{ audio: true }` since we only want video
         navigator.mediaDevices
           .getUserMedia({ video: true })
           .then(function(stream) {
@@ -43,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss">
-$gridSize: 80px;
+$gridSize: 70px;
 
 *,
 html {
